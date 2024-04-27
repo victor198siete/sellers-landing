@@ -1,0 +1,11 @@
+div.swiper-button-next {
+  color: white!;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-css-mode {
+  color: white!;
+}
+
+swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal {
+  margin-top: 2rem;
+}

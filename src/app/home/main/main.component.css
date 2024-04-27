@@ -1,0 +1,29 @@
+.container {
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+  height: 50px; /* Ajusta la altura según sea necesario */
+  /* text-align: left; */
+}
+.button {
+  background-color: #e59f33;
+  position: absolute;
+  bottom: -100px; /* Inicia oculto debajo */
+  left: 10%;
+  transform: translateX(-50%);
+  transition: bottom 1s ease-in-out;
+  animation: surgir 1s forwards; /* Animación al iniciar */
+}
+
+.button:hover {
+  background-color: #e59f33;
+}
+
+@keyframes surgir {
+  0% {
+    bottom: -80px; /* Inicio de la animación */
+  }
+  100% {
+    bottom: 0px; /* Fin de la animación */
+  }
+}
