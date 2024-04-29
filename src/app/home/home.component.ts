@@ -10,6 +10,7 @@ import { AddValuesComponent } from './add-values/add-values.component';
 import { StatsComponent } from './stats/stats.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProductsModelsComponent } from './products-models/products-models.component';
+import { UpBtnComponent } from './up-btn/up-btn.component';
 
 @Component({
   standalone: true,
@@ -24,7 +25,8 @@ import { ProductsModelsComponent } from './products-models/products-models.compo
     AddValuesComponent,
     StatsComponent,
     ContactFormComponent,
-    ProductsModelsComponent
+    ProductsModelsComponent,
+    UpBtnComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],

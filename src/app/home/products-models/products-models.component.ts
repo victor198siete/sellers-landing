@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-products-models',
@@ -10,6 +10,19 @@ import { Component } from '@angular/core';
 export class ProductsModelsComponent {
   isModalOpen: boolean = false;
   propertyModel: string = '';
+  esVisible: boolean = false;
+
+  @HostListener('window:scroll', ['$event'])
+  verificarScroll(event: Event) {
+    const scrollPosition = window.scrollY;
+    const contactoSection = document.getElementById('modelos');
+
+    if (contactoSection && scrollPosition >= contactoSection.offsetTop - window.innerHeight / 2) {
+      this.esVisible = true;
+    } else {
+      this.esVisible = false;
+    }
+  }
 
 
   openModal(modelo: string) {

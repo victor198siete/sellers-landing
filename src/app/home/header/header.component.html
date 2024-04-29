@@ -1,4 +1,4 @@
-<header class="bg-white">
+<header class="bg-white" id="header">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="flex item-center -m-1.5 p-1.5">
@@ -16,12 +16,12 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="#modelos" (click)="scrollToSection()" class="text-sm font-semibold leading-6 text-gray-900">Modelos</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Valor Agregado</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Amenidades</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contacto</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Asociados</a>
-
+      <button class="btnPrimary" type="button" (click)="goToSection('inicio')">Inicio</button>
+      <button class="btnPrimary" type="button" (click)="goToSection('modelos')">Modelos</button>
+      <button class="btnPrimary" type="button" (click)="goToSection('inversion')">Inversión</button>
+      <button class="btnPrimary" type="button" (click)="goToSection('amenidades')">Amenidades</button>
+      <button class="btnPrimary" type="button" (click)="goToSection('contacto')">Contacto</button>
+      <button class="btnPrimary" type="button" (click)="goToSection('asociados')">Asociados</button>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->

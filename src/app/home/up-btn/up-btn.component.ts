@@ -1,15 +1,13 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-up-btn',
   standalone: true,
   imports: [],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './up-btn.component.html',
+  styleUrl: './up-btn.component.css'
 })
-export class HeaderComponent {
-  isOpen: boolean = true;
-
+export class UpBtnComponent {
   @Output() scrollToContactEvent = new EventEmitter<void>();
 
   constructor() {}
@@ -21,10 +19,6 @@ export class HeaderComponent {
   public goToSection(section: string): void {
     const element = document.getElementById(section);
     element?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  onClose(){
-    this.isOpen = !this.isOpen;
   }
 
 }
