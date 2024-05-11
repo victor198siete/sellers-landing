@@ -1,0 +1,72 @@
+<div class="bg-white py-24 sm:py-24" id="sections">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div>
+      <ul role="list" class="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+        <li class="col-span-1 flex rounded-md shadow-sm">
+          <div
+            class="flex w-16 flex-shrink-0 items-center justify-center bg-pink-600 rounded-l-md text-sm font-medium text-white">
+            4</div>
+          <div
+            class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
+            <div class="flex-1 truncate px-4 py-2 text-sm" style="cursor: pointer;" (click)="sectionSelecting(1)">
+              <a class="font-medium text-gray-900 hover:text-gray-600">Preventas</a>
+              <p class="text-gray-500">Ofertas Preventas</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-span-1 flex rounded-md shadow-sm">
+          <div
+            class="flex w-16 flex-shrink-0 items-center justify-center bg-purple-600 rounded-l-md text-sm font-medium text-white">
+            4</div>
+          <div
+            class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
+            <div class="flex-1 truncate px-4 py-2 text-sm"  style="cursor: pointer;" (click)="sectionSelecting(2)">
+              <a class="font-medium text-gray-900 hover:text-gray-600">Rentas</a>
+              <p class="text-gray-500">Propiedades en Renta</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-span-1 flex rounded-md shadow-sm">
+          <div
+            class="flex w-16 flex-shrink-0 items-center justify-center bg-yellow-500 rounded-l-md text-sm font-medium text-white">
+            10</div>
+          <div
+            class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
+            <div class="flex-1 truncate px-4 py-2 text-sm"  style="cursor: pointer;" (click)="sectionSelecting(3)">
+              <a class="font-medium text-gray-900 hover:text-gray-600">Venta de Terrenos</a>
+              <p class="text-gray-500">16 Members</p>
+            </div>
+          </div>
+        </li>
+        <li class="col-span-1 flex rounded-md shadow-sm">
+          <div
+            class="flex w-16 flex-shrink-0 items-center justify-center bg-green-500 rounded-l-md text-sm font-medium text-white">
+            1</div>
+          <div
+            class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
+            <div class="flex-1 truncate px-4 py-2 text-sm"  style="cursor: pointer;" (click)="sectionSelecting(4)">
+              <a class="font-medium text-gray-900 hover:text-gray-600">Inversiones</a>
+              <p class="text-gray-500">Inversión en Propiedades</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bg-white px-6 py-12 sm:py-12 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{sectionTextList[sectionSelected - 1]}}</h2>
+  </div>
+</div>
+@if(sectionSelected === 1){
+  <app-products-models></app-products-models>
+  <app-add-values></app-add-values>
+  <app-amenities></app-amenities>
+}
+@if(sectionSelected === 2){
+}
+@if(sectionSelected === 3){
+}
+@if(sectionSelected === 4){
+}

@@ -11,6 +11,7 @@ import { StatsComponent } from './stats/stats.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProductsModelsComponent } from './products-models/products-models.component';
 import { UpBtnComponent } from './up-btn/up-btn.component';
+import { SectionsComponent } from './sections/sections.component';
 
 @Component({
   standalone: true,
@@ -26,7 +27,8 @@ import { UpBtnComponent } from './up-btn/up-btn.component';
     StatsComponent,
     ContactFormComponent,
     ProductsModelsComponent,
-    UpBtnComponent
+    UpBtnComponent,
+    SectionsComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
